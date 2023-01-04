@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cep Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    
+</head>
+<body class="h-screen bg-gray-200  flex flex-col justify-center items-center">
+<div class="grid gap-4 grid-cols-1">
+    <input type="text" class="py-2 px-4 rounded-md" id="cep" placeholder="Digite o CEP">
+    <button type="button" onclick="consultaCep()" class="bg-blue-700 text-white py-2 px-4 rounded-md hover:opacity-75 hover:shadow-lg">Consultar</button>
+    <div>
+    <p class="font-semibold" id="logradouro"></p>
+    <p class="font-semibold" id="bairro"></p>
+    <p class="font-semibold" id="cidade"></p>
+    <p class="font-semibold" id="localidade"></p>
+    <p class="font-semibold" id="uf"></p>
+    </div>
+    
+</div>
+<script src="./js/main.js"></script>
+</body>
+</html>
